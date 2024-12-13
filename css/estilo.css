@@ -1,0 +1,214 @@
+/* Importar fuentes adicionales para estilo italiano y amigable */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');  /* Fuente estilo italiana */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');  /* Fuente legible */
+
+/* Estilo general para el fondo y la tipografía */
+body {
+  background-color: #f8f5e1;  /* Color vainilla para el fondo */
+  font-family: 'Open Sans', sans-serif;  /* Fuente más amigable para el cuerpo */
+}
+
+/* Título principal con fuente italiana */
+.titulo h1 {
+  font-family: 'Lobster', cursive;  /* Estilo cursiva tipo italiana */
+  font-size: 4vw;
+  color: #8e1111;  /* Color rojo oscuro */
+  text-align: center;
+  padding: 10px;
+}
+
+/* Logo */
+.logo {
+  border-radius: 10vw;
+}
+
+/* Cambiar el color del texto en la introducción */
+.introduccion p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2vw;
+  color: #4b0e0e;  /* Un color rojo oscuro */
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Estilo de los ingredientes */
+.ingredientes ul {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1vw;
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.ingredientes li {
+  background-color: #f4a300; /* Color de fondo suave */
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+/* Estilo de la receta */
+.receta {
+  background-color: burlywood;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 5vw;
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  padding: 20px;
+}
+
+/* Agregar estilo a los enlaces */
+a {
+  text-decoration: none;
+  color: #8e1111;
+}
+
+a:hover {
+  background-color: #6c0e0e;
+  font-size: 2vw;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Estilo de los botones */
+.btn, .button1 {
+  background-color: #8e1111;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn:hover, .button1:hover {
+  background-color: #6c0e0e;
+}
+
+/* Fondo del header y footer */
+header, footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #4b0e0e;
+  border-radius: 5vw;
+  padding: 20px;
+}
+
+/* Estilo para el header (logotipo y título) */
+header .logo {
+  max-width: 100px;
+  margin-right: 20px;
+}
+
+header .titulo h1 {
+  margin-left: 20px;
+}
+
+/* Modo inclusivo */
+body.inclusivo {
+  background-color: black;
+  color: white;
+}
+
+body.inclusivo .titulo h1 {
+  color: white;
+}
+
+body.inclusivo .ingredientes li {
+  background-color: #d8b26d; /* Color burlywood */
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 575px) {
+  body {
+    background-image: none;
+  }
+
+  .movil {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  /* Modificar tamaño de la fuente en pantallas pequeñas */
+  .titulo h1 {
+    font-size: 6vw;
+  }
+}
+
+/* Modificación para tamaños medianos */
+@media (min-width: 576px) and (max-width: 991px) {
+  header, footer {
+    background-color: darkblue;
+  }
+
+  .movil {
+    display: none;
+  }
+}
+
+/* Modificación para pantallas grandes */
+@media (min-width: 1200px) {
+  body {
+    background-color: #8bc6dd;
+    background-image: url(../ima/mi\ pais.png);
+  }
+
+  .movil {
+    display: none;
+  }
+}
+
+/* Estilo de los cards en la parte inferior */
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 1vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgb(110, 110, 110);
+  border-radius: 1vw;
+}
+
+.espacio {
+  margin-left: 5vw;
+}
+
+.enlaces {
+  margin: 2vw;
+}
+
+.mapa {
+  margin: 1vw;
+}
+
+footer .redes2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+footer .ipc {
+  text-align: center;
+  font-size: 1vw;
+  margin-top: 1rem;
+}
